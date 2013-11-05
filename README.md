@@ -1,14 +1,9 @@
-houdini
-=======
-
 **Houdini** allows easy hotswapping of Python code. The snippet is currently
 at ALPHA stage, but should soon be top notch.
 
-### Basic usage examples
+### Basic usage example
 
-Create two files:
-
-**swapped.py**
+Create the files **swapped.py**:
 ```python
 from houdini import hotswap
 
@@ -17,19 +12,17 @@ def foo():
     return '0x0'
 ```
 
-and
-
-**client.py**
+and **client.py**:
 ```python
 import time
 import swapped
 
 while True:
-    swapped.foo()
+    print swapped.foo()
     time.sleep(1)
 ```
 
-Then, launch client.py in a terminal and edit swapped.py. 
+Then, launch `client.py` and edit `swapped.py`. 
 
 
 ### Limitations

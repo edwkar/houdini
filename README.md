@@ -1,10 +1,7 @@
-houdini
-=======
-
 **Houdini** allows easy hotswapping of Python code. The snippet is currently
 at ALPHA stage, but should soon be top notch.
 
-### Basic usage examples
+### Basic usage example
 
 Create the files **swapped.py**:
 ```python
